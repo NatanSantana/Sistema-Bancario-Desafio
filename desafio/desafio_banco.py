@@ -75,8 +75,7 @@ while True:
         print("Você atingiu o limite de saque diário")
         break
         
-print("teste")
-print("testando")
+
    
     
 
