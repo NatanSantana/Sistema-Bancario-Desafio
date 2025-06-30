@@ -29,13 +29,14 @@ while True:
 
         depositado = float(depositado)
 
-        if depositado > 0:
-            saldo + depositado
-            extrato.append(f"Valor Depositado: R$ {depositado} ")
+    if depositado > 0:
+        depositado + saldo
+        extrato.append(f"Valor Depositado: R$ {depositado} ")
+        saldo += depositado
 
 
     
-        if depositado < 0:
+    if depositado < 0:
             print("Digite um número válido, POSITIVO!")
         
         
@@ -55,8 +56,9 @@ while True:
 
         if (saque < 500) and (saque < saldo):
             print("O limite diário é de 3 saques")
-            extrato.append(f"Valor Sacado: R$ {saque} ")
             saldo -= saque
+            extrato.append(f"Valor Sacado: R$ {saque} ")
+            
             LIMITE_SAQUE -= 1
 
         if saque > 500:
@@ -65,6 +67,7 @@ while True:
     
     if opcao == "3":
         print(f"Seu extrato: {extrato}")
+        print(f"Saldo total: {saldo}")
 
     if opcao == "4":
         print("Obrigado por usar o Saint Bank, Até uma próxima")
@@ -75,8 +78,7 @@ while True:
         print("Você atingiu o limite de saque diário")
         break
         
-print("teste")
-print("testando")
+
    
     
 
