@@ -39,7 +39,7 @@ def deposito(valor_depositado,extrato,/):
 def sacar(*,valor_saque,extrato):
     global LIMITE_SAQUE
     global saldo   
-    if (valor_saque < 500) and (valor_saque < saldo) and (valor_saque > 0) and (LIMITE_SAQUE >= 1):
+    if (valor_saque <= 500) and (valor_saque < saldo) and (valor_saque > 0) and (LIMITE_SAQUE >= 1):
         
         print("O limite diário é de 3 saques")
         saldo -= valor_saque
