@@ -25,7 +25,7 @@ criar_contas = {}
 senhas = []
 
 
-def deposito(valor_depositado,extrato,/):
+def deposito(valor_depositado,/):
     if valor_depositado > 0:
         global saldo
 
@@ -116,7 +116,7 @@ while True:
 
         valor_depositado = float(valor_depositado)
         
-        deposito(valor_depositado,extrato)
+        deposito(valor_depositado)
         
     if opcao == "2":
         
